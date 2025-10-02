@@ -10,19 +10,19 @@ private:
     int greenVal;
     int blueVal;
 public: 
-    Color () {
+    Color() {
         redVal = 0;
         greenVal = 0; 
         blueVal = 0; 
     }
 
-    Color (int r, int g, int b) {
+    Color(int r, int g, int b) {
         redVal = r;
         greenVal = g; 
         blueVal = b; 
     }
 
-    Color (int r, int g) {
+    Color(int r, int g) {
         redVal = r;
         greenVal = g; 
         blueVal = 0; 
