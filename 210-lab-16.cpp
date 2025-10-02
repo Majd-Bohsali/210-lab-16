@@ -10,7 +10,6 @@ private:
     int greenVal;
     int blueVal;
 public: 
-
     Color () {
         redVal = 0;
         greenVal = 0; 
