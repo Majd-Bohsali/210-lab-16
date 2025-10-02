@@ -10,6 +10,25 @@ private:
     int greenVal;
     int blueVal;
 public: 
+
+    Color () {
+        redVal = 0;
+        greenVal = 0; 
+        blueVal = 0; 
+    }
+
+    Color (int r, int g, int b) {
+        redVal = r;
+        greenVal = g; 
+        blueVal = b; 
+    }
+
+    Color (int r, int g) {
+        redVal = r;
+        greenVal = g; 
+        blueVal = 0; 
+    }
+
     int getRedVal()              { return redVal; }
     void setRedVal(int r)        { redVal = r; }
     int getGreenVal()            { return greenVal; }
@@ -24,21 +43,12 @@ public:
 
 int main() { 
     Color color1; 
-    color1.setRedVal(50); 
-    color1.setGreenVal(120);
-    color1.setBlueVal(155);
     color1.print();
 
-    Color color2; 
-    color2.setRedVal(176);
-    color2.setGreenVal(232);
-    color2.setBlueVal(0);
+    Color color2 (186, 232); 
     color2.print();
 
-    Color color3; 
-    color3.setRedVal(127); 
-    color3.setGreenVal(98);
-    color3.setBlueVal(45);
+    Color color3(127, 98, 45); 
     color3.print();
 
     return 0;
